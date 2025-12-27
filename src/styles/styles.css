@@ -1,0 +1,100 @@
+/*
+ * ----------	---	---------------------------------------------------------
+ * File: styles.css
+ * Project: restaurant-page
+ * File Created: Tuesday, 23rd December 2025 12:04:04 am
+ * Author: Elman Islam (elmanislam123@gmail.com)
+ * -----
+ * Last Modified: Friday, 26th December 2025 8:43:39 pm
+ * Modified By: Elman Islam (elmanislam123@gmail.com)
+ * -----
+ * Copyright (c) 2025 Ilma Co.
+ * ----------	---	---------------------------------------------------------
+ */
+
+@font-face {
+  font-family: "sunny-spell";
+  src: url("../assets/fonts/krabby-patty.ttf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "krabby-patty";
+  src: url("../assets/fonts/krabby-patty.ttf") format("opentype");
+  font-style: normal;
+}
+
+:root {
+  --spongebob-yellow: #fff359;
+  --primary-color: #ffffff;
+}
+body {
+  font-size: 16px;
+  background-image: url("../assets/images/spongebob-flowers-background.jpg");
+}
+
+body,
+button {
+  font-family: "krabby-patty";
+}
+
+div#content {
+  background-color: var(--spongebob-yellow);
+  position: relative;
+  border-radius: 30px;
+  max-width: 810px;
+  padding: 55px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.text-box {
+  background-color: tan;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+/* Hours list styling */
+#hours h2,
+#contact h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+#hours ul,
+#contact ul {
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#hours li,
+#contact li {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  color: #2b2b2b;
+  font-size: 0.95rem;
+}
+
+#hours li:last-child,
+#contact li:last-child {
+  border-bottom: none;
+}
+
+#hours li strong,
+#contact li strong {
+  display: inline-block;
+  min-width: 8rem;
+}
